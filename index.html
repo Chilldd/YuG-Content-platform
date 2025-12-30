@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu Content Platform G</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    typography: {
+                        DEFAULT: {
+                            css: {
+                                '--tw-prose-body': 'var(--claude-body)',
+                                '--tw-prose-headings': 'var(--claude-text)',
+                                '--tw-prose-quotes': 'var(--claude-body)',
+                                '--tw-prose-quote-borders': 'var(--claude-text)',
+                                maxWidth: 'none',
+                                color: 'var(--claude-body)',
+                                lineHeight: '1.8',
+                                p: {
+                                    marginTop: '1.5em',
+                                    marginBottom: '1.5em',
+                                },
+                                h2: {
+                                    fontFamily: 'var(--font-heading)',
+                                    fontWeight: '500',
+                                    marginTop: '2.5em',
+                                    marginBottom: '1em',
+                                    fontStyle: 'italic',
+                                },
+                                h3: {
+                                    fontFamily: 'var(--font-heading)',
+                                    fontWeight: '500',
+                                    marginTop: '2em',
+                                    marginBottom: '0.8em',
+                                },
+                                blockquote: {
+                                    fontFamily: 'var(--font-heading)',
+                                    fontStyle: 'italic',
+                                    fontWeight: '400',
+                                    fontSize: '1.25rem',
+                                    borderLeftWidth: '1.5px',
+                                    paddingLeft: '1.5rem',
+                                    quotes: 'none',
+                                },
+                                'blockquote p:first-of-type::before': { content: 'none' },
+                                'blockquote p:last-of-type::after': { content: 'none' },
+                            },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        :root {
+            /* Deeper, more sophisticated color palette */
+            --claude-bg: #ECE8DF; 
+            --claude-card: #E2DDD1;
+            --claude-text: #2D2D2A;
+            --claude-body: #374151;
+            --claude-border: #D3CDC0;
+            --font-heading: 'Newsreader', serif;
+            --font-body: 'Inter', 'Noto Sans SC', sans-serif;
+        }
+
+        body {
+            background-color: var(--claude-bg);
+            color: var(--claude-text);
+            font-family: var(--font-body);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, .font-serif {
+            font-family: var(--font-heading);
+        }
+
+        .dropcap::first-letter {
+            float: left;
+            font-family: var(--font-heading);
+            font-size: 4rem;
+            line-height: 1;
+            padding-right: 0.75rem;
+            color: var(--claude-text);
+            font-weight: 600;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: var(--claude-border);
+            border-radius: 10px;
+        }
+        
+        .transition-bezier {
+            transition-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        /* Gray filter for images as per spec */
+        .curated-img {
+            filter: grayscale(0.6) contrast(0.9);
+            transition: filter 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+        .curated-img:hover {
+            filter: grayscale(0) contrast(1);
+            transform: scale(1.015);
+        }
+
+        .content-active-img {
+            filter: grayscale(0);
+        }
+
+        /* Smooth reveal animation */
+        @keyframes reveal {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .reveal-item {
+            animation: reveal 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+
+        /* Skeleton Shimmer Animation */
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        .shimmer {
+            background: linear-gradient(90deg, var(--claude-card) 25%, var(--claude-border) 50%, var(--claude-card) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite linear;
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body class="overflow-x-hidden">
+    <div id="root"></div>
+</body>
+</html>
