@@ -7,7 +7,7 @@ export const fragmentedAttention: Article = {
   subtitle: '在算法编织的数字废墟中，重新找回属于人类的连贯性与深度。',
   excerpt: '我们正在经历一场前所未有的认知实验。当生活被15秒的循环切碎，我们失去的不止是时间，更是对现实的感知力与深度的共情。',
   author: 'Yu Editorial',
-  date: '2024.05.24',
+  date: '2025.02.25',
   category: 'Culture',
   coverImage: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=1200',
   readingTime: '22 min read',
