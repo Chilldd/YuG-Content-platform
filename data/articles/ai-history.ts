@@ -7,7 +7,7 @@ export const aiHistory: Article = {
   subtitle: '从神经网络的沉浮到Transformer的范式转移，见证硅基生命的破晓。',
   excerpt: '从阿兰·图灵的致命提问到大模型的暴力美学，AI的历史不仅是算法的进化，更是人类对“灵魂”本质的终极追索。',
   author: 'Yu Editorial',
-  date: '2025.02.25',
+  date: '2026.01.06',
   category: 'Technology',
   coverImage: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=1200',
   readingTime: '95 min read',

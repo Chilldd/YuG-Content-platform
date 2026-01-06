@@ -7,7 +7,7 @@ export const aiDeveloperEfficiency: Article = {
   subtitle: '从代码编写者到意图导演，在生成式浪潮中重塑程序员的核心壁垒。',
   excerpt: '当编程语言演变为自然语言，程序员的核心价值正在从“语法熟练度”向“系统设计能力”与“问题定义能力”发生剧烈迁移。',
   author: 'Yu Editorial',
-  date: '2025.02.25',
+  date: '2026.01.06',
   category: 'Technology',
   coverImage: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1200',
   readingTime: '120 min read',

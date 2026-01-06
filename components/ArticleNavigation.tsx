@@ -41,14 +41,13 @@ export const ArticleNavigation: React.FC<ArticleNavigationProps> = ({ currentArt
             alt="" 
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#ECE8DF] via-[#ECE8DF]/95 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
-          <div className="absolute inset-0 backdrop-blur-[1px] group-hover:backdrop-blur-0 transition-all duration-500" />
         </div>
         
         <div className="relative z-10">
-          <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-[#2D2D2A]/60 block mb-6 transition-transform duration-500 group-hover:-translate-x-1">← Previous Piece</span>
+          <span className="text-xs font-bold text-[#2D2D2A]/60 block mb-6 transition-transform duration-500 group-hover:-translate-x-1">← 上一篇</span>
           <div className="flex flex-col gap-2">
             <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#2D2D2A]/40">{navigation.prev.category}</span>
-            <h3 className="text-xl md:text-2xl font-serif italic text-[#2D2D2A] leading-tight group-hover:text-black transition-colors duration-300 drop-shadow-sm">{navigation.prev.title}</h3>
+            <h3 className="text-xl md:text-2xl font-serif italic text-[#2D2D2A] leading-tight group-hover:text-black transition-colors duration-300">{navigation.prev.title}</h3>
           </div>
         </div>
       </div>
@@ -65,14 +64,13 @@ export const ArticleNavigation: React.FC<ArticleNavigationProps> = ({ currentArt
             alt="" 
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#ECE8DF] via-[#ECE8DF]/95 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
-          <div className="absolute inset-0 backdrop-blur-[1px] group-hover:backdrop-blur-0 transition-all duration-500" />
         </div>
         
         <div className="relative z-10">
-          <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-[#2D2D2A]/60 block mb-6 transition-transform duration-500 group-hover:translate-x-1">Next Piece →</span>
+          <span className="text-xs font-bold text-[#2D2D2A]/60 block mb-6 transition-transform duration-500 group-hover:translate-x-1">下一篇 →</span>
           <div className="flex flex-col gap-2">
             <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#2D2D2A]/40">{navigation.next.category}</span>
-            <h3 className="text-xl md:text-2xl font-serif italic text-[#2D2D2A] leading-tight group-hover:text-black transition-colors duration-300 drop-shadow-sm">{navigation.next.title}</h3>
+            <h3 className="text-xl md:text-2xl font-serif italic text-[#2D2D2A] leading-tight group-hover:text-black transition-colors duration-300">{navigation.next.title}</h3>
           </div>
         </div>
       </div>

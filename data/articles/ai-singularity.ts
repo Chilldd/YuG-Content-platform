@@ -7,7 +7,7 @@ export const aiSingularity: Article = {
   subtitle: '在碳基直觉与硅基理性的交汇处，重新定义人类的竞争优势与生存尊严。',
   excerpt: '当生成式AI从实验性的玩具转变为社会运行的基础设施，普通人面临的不再是简单的职业替代，而是一场关乎生存主权与认知底层的全面升维。',
   author: 'Yu Editorial',
-  date: '2025.02.25',
+  date: '2026.01.06',
   category: 'Technology',
   coverImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200',
   readingTime: '65 min read',

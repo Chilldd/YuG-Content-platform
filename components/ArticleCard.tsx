@@ -54,10 +54,8 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, onClick }) =>
       </div>
       
       <div className="flex flex-col gap-2 max-w-2xl px-1">
-        <div className="flex items-center gap-3 text-[9px] uppercase tracking-[0.2em] text-slate-500 font-bold">
+        <div className="text-[9px] uppercase tracking-[0.2em] text-slate-500 font-bold">
           <span>{article.date}</span>
-          <span className="w-1 h-1 bg-slate-400 rounded-full"></span>
-          <span>{article.readingTime}</span>
         </div>
         <h2 className="text-xl md:text-2xl leading-[1.2] group-hover:text-slate-600 transition-colors duration-500 font-medium">
           {article.title}

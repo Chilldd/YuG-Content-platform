@@ -46,7 +46,7 @@ const App: React.FC = () => {
   );
   const displayedArticles = filteredArticles.slice(0, visibleCount);
   const hasMore = visibleCount < filteredArticles.length;
-  const latestDate = articles.length > 0 ? [...articles].sort((a, b) => b.date.localeCompare(a.date))[0].date : '2024';
+  const latestDate = articles.length > 0 ? [...articles].sort((a, b) => b.date.localeCompare(a.date))[0].date : '2026.01.06';
 
   // Routing Logic
   useEffect(() => {
@@ -262,12 +262,13 @@ const App: React.FC = () => {
 
         {currentView === 'about' && (
           <div className="pt-32 pb-24 px-6 md:px-12 max-w-3xl mx-auto reveal-item">
-            <h1 className="font-serif italic text-4xl md:text-6xl mb-12">Editorial Philosophy</h1>
+            <h1 className="font-serif italic text-4xl md:text-6xl mb-12">Manifesto</h1>
             <div className="prose prose-lg">
-              <p className="dropcap">Yu Content Platform G (YG) 诞生于信息爆炸的焦虑之中。我们坚信内容的价值不在于生产的速度，而在于策展的深度。在这个“无限滚动”时代，我们选择慢下来。</p>
-              <p>YG 致力于探索设计、技术与人文的交界处。我们不追踪瞬时的热点，只沉淀长期的见解。每一篇文章都是经过深度思考的“数字展品”，每一像素的设计都旨在降低认知噪声，重建阅读的仪式感。</p>
-              <blockquote>“在这个喧嚣的时代，静默是一种最高级的奢侈。”</blockquote>
-              <p>我们的设计遵循“非对称极简主义”，通过大面积的留白与人文感十足的排版，为您提供一个纯净的思考空间。感谢您在此驻足。</p>
+              <p className="dropcap">Yu Content Platform G (YG) 并非为了填补空隙，而是为了创造空隙。在众声喧哗、信息如流沙般坍塌的当下，我们试图打捞那些被速度稀释的真实。</p>
+              <p>这里没有算法的讨好，只有主观的、严苛的策展。我们关注造物之美、逻辑之魅，以及在技术冷峻的外壳下，那颗始终滚烫的人文内核。我们相信，真正改变世界的思想，从不诞生于15秒的碎片，而源于长久的凝视与反复的推敲。</p>
+              <blockquote>“于万物静默处，听惊雷。”</blockquote>
+              <p>YG 是一家致力于“观念策展”的独立平台。我们的设计遵循非对称极简主义，文字在这里不只是信息的载体，它是感官的延伸，是人类在技术丛林中为自己保留的一块“非工业化”呼吸区。</p>
+              <p>这不仅是一个阅读界面，更是一场关于“如何夺回注意力”的无声革命。感谢你选择在此虚度时光。</p>
             </div>
           </div>
         )}
@@ -279,7 +280,7 @@ const App: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-[#D3CDC0] pt-12">
               <div className="flex flex-col gap-2">
                 <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-400">Editorial Inquiry</span>
-                <a href="mailto:hello@yug.platform" className="text-xl font-medium border-b border-transparent hover:border-[#2D2D2A] w-fit transition-all">hello@yug.platform</a>
+                <a href="mailto:1093137020@qq.com" className="text-xl font-medium border-b border-transparent hover:border-[#2D2D2A] w-fit transition-all">1093137020@qq.com</a>
               </div>
               <div className="flex flex-col gap-2">
                 <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-400">Digital Presence</span>

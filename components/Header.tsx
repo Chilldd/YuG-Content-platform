@@ -19,9 +19,9 @@ export const Header: React.FC<HeaderProps> = ({ onGoHome, currentView }) => {
   }, []);
 
   const navItems = [
-    { name: 'Archive', id: 'archive' },
-    { name: 'About', id: 'about' },
-    { name: 'Contact', id: 'contact' }
+    { name: '存档', en: 'Archive', id: 'archive' },
+    { name: '关于', en: 'About', id: 'about' },
+    { name: '联系', en: 'Contact', id: 'contact' }
   ];
 
   const handleNavigate = (e: React.MouseEvent, id: string) => {
@@ -70,14 +70,12 @@ export const Header: React.FC<HeaderProps> = ({ onGoHome, currentView }) => {
             key={item.name}
             href={`#${item.id}`}
             onClick={(e) => handleNavigate(e, item.id)}
-            className={`text-[10px] uppercase tracking-[0.3em] font-bold transition-all duration-300 relative group ${
+            className={`flex flex-col items-center group ${
               currentView === item.id ? 'text-[#2D2D2A]' : 'text-slate-500 hover:text-[#2D2D2A]'
             }`}
           >
-            {item.name}
-            <span className={`absolute -bottom-1 left-0 h-[1.5px] bg-[#2D2D2A] transition-all duration-500 ${
-              currentView === item.id ? 'w-full' : 'w-0 group-hover:w-full'
-            }`} />
+            <span className="text-xs font-bold tracking-widest transition-colors duration-300">{item.name}</span>
+            <span className="text-[7px] uppercase tracking-[0.2em] font-medium opacity-0 group-hover:opacity-40 transition-opacity duration-500 -mt-0.5">{item.en}</span>
           </a>
         ))}
       </nav>
@@ -104,15 +102,13 @@ export const Header: React.FC<HeaderProps> = ({ onGoHome, currentView }) => {
             key={item.name}
             href={`#${item.id}`}
             onClick={(e) => handleNavigate(e, item.id)}
-            className="text-2xl font-serif italic tracking-tight text-[#2D2D2A]"
+            className="flex flex-col items-center gap-1"
             style={{ transitionDelay: `${idx * 100}ms` }}
           >
-            {item.name}
+            <span className="text-2xl font-serif italic tracking-tight text-[#2D2D2A]">{item.name}</span>
+            <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-400">{item.en}</span>
           </a>
         ))}
-        <div className="absolute bottom-12 text-[9px] uppercase tracking-[0.4em] text-slate-400 font-bold">
-          © 2024 Yu Platform G
-        </div>
       </div>
     </header>
   );
